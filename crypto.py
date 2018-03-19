@@ -2,6 +2,7 @@
 ### Abruzzese Alexandre ###
 ###    19 March 2018    ###
 ###########################
+
 import cryptocompare as cc
 
 while (1) :
@@ -20,5 +21,5 @@ while (1) :
 		break
 
 	else :
-		val = cc.get_price(prix)
-		print(val)
+		val = cc.get_price(prix).get(prix).get('EUR')
+		print('\nLa valeur du ' + prix + ' est de : ' + str(val) + ' €')
